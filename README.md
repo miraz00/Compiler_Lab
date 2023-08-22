@@ -21,22 +21,28 @@ Repo for Compiler Lab Semester 7 KTU
     5. Write a lex program to find out total number of vowels and consonants from the given input sting.
     6. Generate a YACC specification to recognize a valid arithmetic expression that uses operators +, – , *,/ and parenthesis.
     7. Generate a YACC specification to recognize a valid identifier which starts with a letter followed by any number of letters or digits.
-     8. Implementation of Calculator using LEX and YACC
-     9. Convert the BNF rules into YACC form and write code to generate abstract
-     syntax tree.
-     10. Write a program to find ε – closure of all states of any given NFA with ε transition.
-     11. Write a program to convert NFA with ε transition to NFA without ε transition.
-     12. Write a program to convert NFA to DFA.
-     13. Write a program to minimize any given DFA.
-     14. Write a program to find the First and Follow of any given grammar.
-     15. Design and implement a recursive descent parser for a given grammar.
-     16. Construct a Shift Reduce Parser for a given language.
-     17. Write a program to perform constant propagation.
-     18. Implement Intermediate code generation for simple expressions.
-     19. Implement the back end of the compiler which takes the three address code and
+    8. Implementation of Calculator using LEX and YACC
+    9. Convert the BNF rules into YACC form and write code to generate abstract
+        syntax tree.
+    10. Write a program to find ε – closure of all states of any given NFA with ε transition.
+    11. Write a program to convert NFA with ε transition to NFA without ε transition.
+    12. Write a program to convert NFA to DFA.
+    13. Write a program to minimize any given DFA.
+    14. Write a program to find the First and Follow of any given grammar.
+    15. Design and implement a recursive descent parser for a given grammar.
+    16. Construct a Shift Reduce Parser for a given language.
+    17. Write a program to perform constant propagation.
+    18. Implement Intermediate code generation for simple expressions.
+    19. Implement the back end of the compiler which takes the three address code and
      produces the 8086 assembly language instructions that can be assembled and run
      using an 8086 assembler. The target assembly instructions can be a simple move,
      add, sub, jump etc.
 
 
 ### Check the complete Syllabus [here](https://github.com/ashwin417/Compiler_Lab/blob/main/Compiler%20Lab.pdf)
+
+
+### Viva Help
+    1. [Mindmajix](https://mindmajix.com/compiler-design-interview-questions)
+    2. [Geeks for Geeks Notes](https://www.geeksforgeeks.org/last-minute-notes-compiler-design-gq/)
+    3. [Coding Ninjas Interview Questions](https://www.codingninjas.com/studio/library/compiler-design-interview-questions)

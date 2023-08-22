@@ -37,3 +37,6 @@ Repo for Compiler Lab Semester 7 KTU
      produces the 8086 assembly language instructions that can be assembled and run
      using an 8086 assembler. The target assembly instructions can be a simple move,
      add, sub, jump etc.
+
+
+### Check the complete Syllabus [here](https://github.com/ashwin417/Compiler_Lab/blob/main/Compiler%20Lab.pdf)

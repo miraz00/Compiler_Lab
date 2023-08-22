@@ -46,6 +46,8 @@ Repo for Compiler Lab Semester 7 KTU
  1. [Mindmajix](https://mindmajix.com/compiler-design-interview-questions)
  2. [Geeks for Geeks Notes](https://www.geeksforgeeks.org/last-minute-notes-compiler-design-gq/)
  3. [Coding Ninjas Interview Questions](https://www.codingninjas.com/studio/library/compiler-design-interview-questions)
+ 4. [CrowdForGeeks](https://crowdforgeeks.com/interview-questions/top-100-compiler-design-interview-questions-and-answers)
+
 
 
 ### Git and GitHub Version Control [Tutorial](https://www.freecodecamp.org/news/introduction-to-git-and-github/)

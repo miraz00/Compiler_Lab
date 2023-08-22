@@ -39,7 +39,7 @@ Repo for Compiler Lab Semester 7 KTU
      add, sub, jump etc.
 
 
-### Check the complete Syllabus [here](https://github.com/ashwin417/Compiler_Lab/blob/main/Compiler%20Lab.pdf)
+### Check the complete Syllabus [here](https://github.com/ashwin417/Compiler_Lab/blob/main/Compiler%20Lab.pdf) !!!
 
 
 ### Viva Help

@@ -2,9 +2,9 @@
 #### Design and implement a lexical analyzer using C language to recognize all valid tokens in the input program. The lexical analyzer should ignore redundant spaces, tabs and newlines. It should also ignore comments.
 
 ### How to Run the Program
-    1. Create the Lexical_analyzer.c file.
+    1. Create the lex_analyzer.c file.
     2. Create the input text file "filein.txt" is the same folder and add a C program there
-    3. Compile the Program in your terminal with "gcc Lexical_analyzer.c" and run "./a.out"
+    3. Compile the Program in your terminal with "gcc lex_analyzer.c" and run "./a.out"
 
 ### Program Algorithm
 

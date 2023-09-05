@@ -41,6 +41,42 @@ Repo for Compiler Lab Semester 7 KTU
 
 ### Check the complete Syllabus [here](https://github.com/ashwin417/Compiler_Lab/blob/main/Compiler%20Lab.pdf) !!!
 
+### FAQs
+Writing lex, writing yacc, and running the programs
+###### How to write your lex programs.
+    
+    Get into emacs with Unix.
+    Name your program something.l (or anything_you_like.l).  That final character is a lower-case L.
+    In emacs, type meta-x (escape followed by x) makefile-mode.
+    To compile your lex file:  flex something.l .  This produces a C file called something.yy.c.
+    To link it by itself:  gcc -o myProgram -ll something.yy.c .  gcc is the GNU C compiler.  -o myProgram means "name the output of the compiler 'myProgram.'"  -ll means link in the lex library.
+    Run it by typing ./myProgram .
+    The action associated with a lex rule will probably be to print something.
+    
+###### How to write your lex & yacc programs.  Remember, flex is a version of lex, and bison is a version of yacc.
+    
+    Name your program something.y .
+    In emacs, type meta-x (escape followed by x) makefile-mode.
+    Compile it like this:  bison -d something.y .  The -d option causes it to create y.tab.h, which may be needed by something.l.
+    flex something.l
+    gcc -o myProgram y.tab.c lex.yy.c -ly.  The -ly option means link in the yacc library.
+    Run it by typing ./myProgram .
+    The action associated with a lex rule will probably be to return a value (identifying what was matched).  The action associated with a yacc rule will probably be to print something.
+    
+###### How to run your lex or lex/yacc program:
+    
+    ./myProgram
+    
+    This takes input from the keyboard, line by line, and prints the results on the screen.  To end the input, type Ctrl-D and hit enter.  This fakes an end-of-file.
+    
+    ./myProgram < myTestFile.txt
+    
+    This takes input from myTestFile.txt, and prints the results on the screen.
+    
+    ./myProgram < myTestFile.txt > myOutput.txt.
+    
+    This sends the output to myOutput.txt.
+
 
 ### Viva Help
  1. [Mindmajix](https://mindmajix.com/compiler-design-interview-questions)

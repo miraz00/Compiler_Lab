@@ -6,34 +6,43 @@ int main()
 {
     FILE *filein = fopen("filein.txt", "r"); 
     FILE *fileout = fopen("fileout.txt", "w"); 
-    int lineno = 1, tokno = 0, i,j, flag = 0; 
+    int lineno = 1, tokno = 0, i=0,j=0, flag = 0; 
     char ch, str[100], keyword[50][50] = {"int", "main", "if", "else", "while", "for", "return", "do", "switch", "FILE", "printf", "scanf"}; 
     fprintf(fileout,"Line \t\t Token no. \t Token \t\t Lexeme\n"); 
     
-    while (!feof(filein))
-    {
     
-    if(ch == '/')
+    while ((ch = fgetc(filein)) != EOF)
     {
-    	while((ch = fgetc(filein))!= '\n')
-    	{
-    		if(ch == '\n')
-    			{break;}
-    	}
-    }
-    else if(ch == '*')
-    {
-    	while((ch = fgetc(filein))!= '*')
-    	if (ch == EOF)
-    	{break;}
-    	ch = fgetc(filein);
-    	if(ch == '/')
-    	{continue;}
-    }
-    
-       i = 0; flag = 0;
-        ch = fgetc(filein);
-        if (ch=='+' || ch=='-' || ch=='*' || ch=='/' || ch=='%' || ch == '=')
+       
+    if (ch == '/')
+        {
+            ch = fgetc(filein);
+            if (ch == '/')
+            {
+                while ((ch = fgetc(filein)) != '\n')
+                {
+                    if (ch == EOF)
+                        break;
+                }
+                lineno++;
+            }
+            else if (ch == '*')
+            {
+                while ((ch = fgetc(filein)) != '*')
+                {
+                    if (ch == EOF)
+                        break;
+                }
+                ch = fgetc(filein);
+                if (ch == '/')
+                {
+                    continue;
+                }
+            }
+        }
+
+       
+        if (ch=='+' || ch=='-' || ch=='*' || ch == '/'|| ch=='%' || ch == '=')
         {
                         fprintf(fileout,"%d\t\t %d\t\t Operator\t %c\n",lineno,tokno,ch);
                         tokno++;
@@ -53,6 +62,7 @@ int main()
                
         else if (isalpha(ch))
         {
+            i=0;
             str[i++] = ch;
             ch = fgetc(filein);
 
@@ -64,7 +74,7 @@ int main()
             }
          
             str[i] = '\0';
-
+            flag = 0;
             for ( j = 0; j<50; j++)
             {
                 if(strcmp(str, keyword[j]) == 0)
@@ -74,14 +84,14 @@ int main()
                 }
             }
             
-     if (flag == 1)
+        if (flag == 1)
             {
                 fprintf(fileout,"%d\t\t %d\t\t Keyword\t %s\n",lineno,tokno,str);
                 tokno++;
             }
             else {fprintf(fileout,"%d\t\t %d\t\t Identifier\t %s\n",lineno,tokno,str);
             tokno++;}
-	   if ( ch=='{' || ch=='}' || ch=='?' || ch=='|' || ch=='[' || ch==']'|| ch==':' || ch == '\"'|| ch == '(' || ch == ')')
+	    if ( ch=='{' || ch=='}' || ch=='?' || ch=='|' || ch=='[' || ch==']'|| ch==':' || ch == '\"'|| ch == '(' || ch == ')')
         	{
            	 fprintf(fileout,"%d\t\t %d\t\t Special Symbol\t %c\n",lineno,tokno,ch);
             	tokno++;

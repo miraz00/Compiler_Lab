@@ -42,9 +42,8 @@ Repo for Compiler Lab Semester 7 KTU
 ### Check the complete Syllabus [here](https://github.com/ashwin417/Compiler_Lab/blob/main/Compiler%20Lab.pdf) !!!
 
 ### FAQs
-Writing lex, writing yacc, and running the programs
-###### How to write your lex programs.
-    
+
+##### How to run lex programs?    
     1. Run example.l file using "lex example.l" to generate the "lex.yy.c" file
     2. Compile the lex.yy.c file using gcc 
     3. Run ./a.out

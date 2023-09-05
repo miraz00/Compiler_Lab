@@ -14,13 +14,13 @@ int main()
     {
         i = 0; flag = 0;
         ch = fgetc(filein);
-        if (ch=='+' || ch=='-' || ch=='*' || ch=='/')
+        if (ch=='+' || ch=='-' || ch=='*' || ch=='/' || ch=='%')
         {
                         fprintf(fileout,"%d\t\t %d\t\t Operator\t %c\n",lineno,tokno,ch);
                         tokno++;
         }
         
-        else if ( ch==';' || ch=='{' || ch=='}' || ch=='?' || ch=='|' || ch=='[' || ch==']' || ch=='%'|| ch==':')
+        else if ( ch==';' || ch=='{' || ch=='}' || ch=='?' || ch=='|' || ch=='[' || ch==']'|| ch==':')
         {
             fprintf(fileout,"%d\t\t %d\t\t Special Symbol\t %c\n",lineno,tokno,ch);
             tokno++;

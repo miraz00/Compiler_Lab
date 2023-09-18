@@ -1,8 +1,8 @@
-#### How to run this program
+## How to run this program
         gcc nfadfa.c
         ./a.out
 
-#### Algorithm
+## Algorithm
 
 1. Initialize all data structures:
 
@@ -37,7 +37,7 @@
 
 5. Close the input file.
 
-#### Explanation
+## Explanation
 
 Certainly! Let's go through the provided C program line by line, explaining each part of it:
 
@@ -220,7 +220,7 @@ new_state` array, and `Fa` array to -1.
 
 The program is essentially a C implementation of the NFA to DFA conversion algorithm, which is used to convert a Non-Deterministic Finite Automaton (NFA) into a Deterministic Finite Automaton (DFA). It does so by reading the NFA's transition functions and states from an input file, constructing the DFA transition table, and printing the resulting DFA.
 
-##### Theory
+## Theory
 
 ### What is NFA ?
 

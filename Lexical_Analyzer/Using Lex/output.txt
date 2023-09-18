@@ -1,0 +1,43 @@
+#include<stdio.h> is a preprocessor directive
+void is an identifier
+main is an identifier
+( is a Special symbol
+) is a Special symbol
+{ is a Special symbol
+int is a Keyword
+a is an identifier
+, is a Special symbol
+b is an identifier
+, is a Special symbol
+c is an identifier
+; is a Special symbol
+c is an identifier
+= is an Operator
+a is an identifier
++ is an Operator
+b is an identifier
+; is a Special symbol
+printf is a Keyword
+( is a Special symbol
+"Sum is %d" is a STRING
+, is a Special symbol
+c is an identifier
+) is a Special symbol
+; is a Special symbol
+a is an identifier
+= is an Operator
+c is an identifier
+- is an Operator
+b is an identifier
+; is a Special symbol
+printf is a Keyword
+( is a Special symbol
+"Difference is %d" is a STRING
+, is a Special symbol
+a is an identifier
+) is a Special symbol
+; is a Special symbol
+return is a Keyword
+0 is a Digit
+; is a Special symbol
+} is a Special symbol

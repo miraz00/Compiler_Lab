@@ -2,9 +2,10 @@
 
 #### How to run the program
  You can run the program using lex or flex tool
- flex lex_ar.l
- gcc lex.yy.c
- ./a.out
+ 
+      >>> flex lex_ar.l
+      >>> gcc lex.yy.c
+      >>> ./a.out
 
 #### Algorithm for the program
 

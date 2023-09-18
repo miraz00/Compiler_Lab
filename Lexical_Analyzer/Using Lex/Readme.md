@@ -39,21 +39,24 @@
 
 #### Explaination for the Program 
 
-     Lexical Analyzer Program
-     This Lexical Analyzer program is designed to tokenize and classify various elements within a C source code file (file.c). It recognizes and prints information about different types of tokens, including keywords, identifiers, operators, strings, digits, comments, special symbols, and character literals.
+##### Lexical Analyzer Program
+    This Lexical Analyzer program is designed to tokenize and classify various elements within a C source code file (file.c). It recognizes and prints information about different types of      tokens, including keywords, identifiers, operators, strings, digits, comments, special symbols, and character literals.
      
-     Lex Program Structure
+##### Lex Program Structure
      Your Lex program is structured as follows:
      
-     Initialization: The program starts with an initialization section enclosed in %{ and %}. In this section, you declare and initialize the COMMENT variable to help handle comments.
+###### Initialization: 
+      The program starts with an initialization section enclosed in %{ and %}. In this section, you declare and initialize the COMMENT variable to help handle comments.
      
-     Regular Expression Definitions: Following the initialization section, you define regular expressions and associate them with token names. For example, you define identifier to match valid C identifiers and [0-9]+ to match digits. These definitions help Lex recognize different types of tokens.
+###### Regular Expression Definitions: 
+     Following the initialization section, you define regular expressions and associate them with token names. For example, you define identifier to match valid C identifiers and [0-9]+ to match digits. These definitions help Lex recognize different types of tokens.
      
-     Rules Section: This section contains a list of rules that specify what action to take when a specific regular expression pattern is matched. Each rule has the format:
+###### Rules Section: 
+     This section contains a list of rules that specify what action to take when a specific regular expression pattern is matched. Each rule has the format:
          pattern { action }
      The actions are C code blocks enclosed in curly braces. When a pattern is matched, the associated action is executed.
      
-     Token Recognition and Classification
+##### Token Recognition and Classification
      Now, let's break down the token recognition and classification in your program:
      
      Preprocessor Directives: Lines starting with # are recognized as preprocessor directives. The corresponding action prints these lines as "preprocessor directive."
@@ -78,14 +81,12 @@
      
      Unrecognized Tokens: If none of the above patterns match, it prints the token as "Unrecognized token."
      
-     Main Function
+##### Main Function
      The main function of the program opens the C source code file file.c, sets the input stream yyin to read from this file, and then invokes the Lexical Analyzer by calling yylex(). The output is printed to the standard output.
      
      yywrap Function
      The yywrap function is used to indicate the end of input to the Lexical Analyzer. It returns 1 to signal the end of processing.
-     
-     Output
-     The program produces output lines for each recognized token, indicating the line number, token number, token type, and lexeme. Unrecognized tokens are also reported.
+
      
      Overall, this Lex program serves as a basic Lexical Analyzer for C source code, tokenizing and classifying various elements to help in subsequent parsing or analysis.
   

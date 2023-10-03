@@ -49,10 +49,12 @@ Replace `programname.c` with the actual name of your C source code file.
 - It simulates the reduction of parts of the expression according to the rules in the operator precedence table.
 
 10. **String Acceptance or Rejection**:
+
  - If both the stack and input string contain only '$' at this point, the string is accepted, and the program indicates that.
  - If any other condition is met, the string is rejected.
 
 11. **Displaying Actions**:
+
  - Throughout the parsing process, the program displays the current state of the stack and input string, along with the action taken (Shift or Reduce).
 
 12. **Loop Termination**:

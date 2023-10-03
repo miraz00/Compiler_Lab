@@ -171,3 +171,29 @@ int main() {
 
     return 0;
 }
+
+/*
+This code implements the construction of a Deterministic Finite Automaton (DFA) from a given Non-Deterministic Finite Automaton (NFA) using the subset construction algorithm. Here's an overview of its functionality:
+
+1. It includes necessary header files for input/output and string manipulation.
+
+2. It defines constants for the maximum number of states (MAX_STATES) and the maximum alphabet size (MAX_ALPHABET).
+
+3. It declares several arrays to represent the NFA, epsilon transitions, DFA, and related information.
+
+4. The `epsilon_closure` function calculates the epsilon-closure of a given state by recursively exploring epsilon transitions.
+
+5. The `closure_contains` function checks if a closure set contains a specific state.
+
+6. `print_set` is a helper function to print a set of states enclosed in curly braces.
+
+7. `construct_dfa` is the main function that constructs the DFA from the NFA using the subset construction algorithm.
+
+8. In the `main` function:
+   - It reads the number of states in the NFA and the number of input symbols (excluding epsilon) from the user.
+   - Initializes the NFA and epsilon transition table with default values.
+   - Reads the NFA transition table and epsilon transitions from the user.
+   - Calls `construct_dfa` to create the DFA.
+   - Prints the DFA transition table, including states, alphabet, and transitions.
+
+Overall, this code performs the conversion from an NFA to a DFA, enabling deterministic processing of input strings, a crucial step in formal language theory and compiler construction. The subset construction algorithm ensures that the DFA recognizes the same language as the original NFA.*/

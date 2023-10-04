@@ -17,8 +17,8 @@ void main()
 {
 char stack[20],ip[20],opt[10][10][1],ter[10];
 int i,j,k,n,top=0,col,row;
-for(i=0;i<10;i++){stack[i]=NULL; ip[i]=NULL;
-for(j=0;j<10;j++){opt[i][j][1]=NULL;}}
+for(i=0;i<10;i++){stack[i]='\0'; ip[i]='\0';
+for(j=0;j<10;j++){opt[i][j][1]='\0';}}
 printf("Enter the no.of terminals:");
 scanf("%d",&n);
 printf("\nEnter the terminals:");

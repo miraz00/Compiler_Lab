@@ -1,0 +1,38 @@
+Enter the no. of productions : 8
+
+Enter the production string like "E=E+T" 
+and epsilon as #
+
+Enter production Number 1 : E=TX
+Enter production Number 2 : X=+TX
+Enter production Number 3 : X=#
+Enter production Number 4 : T=FY
+Enter production Number 5 : Y=*FY
+Enter production Number 6 : Y=#
+Enter production Number 7 : F=(E)
+Enter production Number 8 : F=i
+
+Find FIRST and FOLLOW of --> E
+First (E) = { ( i  }
+Follow (E) = { $ )  }
+Do you want to continue(Press 1 to continue...) ? 1
+
+Find FIRST and FOLLOW of --> X
+First (X) = { + $ )  }
+Follow (X) = { $ )  }
+Do you want to continue(Press 1 to continue...) ? 1
+
+Find FIRST and FOLLOW of --> T
+First (T) = { ( i  }
+Follow (T) = { + $ )  }
+Do you want to continue(Press 1 to continue...) ? 1
+
+Find FIRST and FOLLOW of --> Y
+First (Y) = { * + $ )  }
+Follow (Y) = { + $ )  }
+Do you want to continue(Press 1 to continue...) ? 1
+
+Find FIRST and FOLLOW of --> F
+First (F) = { ( i  }
+Follow (F) = { * + $ )  }
+Do you want to continue(Press 1 to continue...) ? 0

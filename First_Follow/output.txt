@@ -1,3 +1,5 @@
+s7cii@lab6:~/Compiler_Lab/First_Follow$ gcc first_follow.c 
+s7cii@lab6:~/Compiler_Lab/First_Follow$ ./a.out 
 Enter the no. of productions : 8
 
 Enter the production string like "E=E+T" 
@@ -18,7 +20,7 @@ Follow (E) = { $ )  }
 Do you want to continue(Press 1 to continue...) ? 1
 
 Find FIRST and FOLLOW of --> X
-First (X) = { + $ )  }
+First (X) = { + #  }
 Follow (X) = { $ )  }
 Do you want to continue(Press 1 to continue...) ? 1
 
@@ -28,7 +30,7 @@ Follow (T) = { + $ )  }
 Do you want to continue(Press 1 to continue...) ? 1
 
 Find FIRST and FOLLOW of --> Y
-First (Y) = { * + $ )  }
+First (Y) = { * #  }
 Follow (Y) = { + $ )  }
 Do you want to continue(Press 1 to continue...) ? 1
 

@@ -6,6 +6,8 @@ int nop, m = 0;
 char prod[10][10], res[10];
 
 void FIRST(char c);
+void FIRST2(char c);
+
 void FOLLOW(char c);
 void result(char c);
 
@@ -60,7 +62,9 @@ int main()
 
         printf("Follow (%c) = { ", c);
         for (i = 0; i < m; ++i)
-            printf("%c ", res[i]);
+        {   if(res[i] != '#')
+                printf("%c ", res[i]);
+        }
         puts(" }");
 
         printf("Do you want to continue(Press 1 to continue...) ? ");
@@ -69,6 +73,8 @@ int main()
 
     return 0;
 }
+   
+
 
 void FOLLOW(char c)
 {
@@ -82,7 +88,7 @@ void FOLLOW(char c)
             if (prod[i][j] == c)
             {
                 if (prod[i][j + 1] != '\0')
-                    FIRST(prod[i][j + 1]);
+                    FIRST2(prod[i][j + 1]);
                 if (prod[i][j + 1] == '\0' && c != prod[i][0])
                     FOLLOW(prod[i][0]);
             }
@@ -100,7 +106,27 @@ void FIRST(char c)
     {
         if (prod[k][0] == c)
         {
-            if (prod[k][2] == '#')
+            if (prod[k][2] == c)
+                return;
+            else if (islower(prod[k][2]))
+                result(prod[k][2]);
+            else
+                FIRST(prod[k][2]);
+        }
+    }
+    return;
+}
+
+void FIRST2(char c)
+{
+    int k;
+    if (!(isupper(c)))
+        result(c);
+    for (k = 0; k < nop; ++k)
+    {
+        if (prod[k][0] == c)
+        {
+            if(prod[k][2] == '#')
                 FOLLOW(prod[k][0]);
             else if (prod[k][2] == c)
                 return;
@@ -112,6 +138,7 @@ void FIRST(char c)
     }
     return;
 }
+
 
 void result(char c)
 {

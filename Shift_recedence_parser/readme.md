@@ -13,15 +13,15 @@
         id+id*id
         stack    input   action
 
-        $       id+id*id$       SHIFT->id
-        $id       +id*id$       REDUCE TO E
-        $E        +id*id$       SHIFT->id
-        $E+        id*id$       SHIFT->id
-        $E+id        *id$       REDUCE TO E
-        $E+E         *id$       REDUCE TO E
-        $E           *id$       SHIFT->id
-        $E*           id$       SHIFT->id
-        $E*id           $       REDUCE TO E
-        $E*E            $       REDUCE TO E
+        $       id+id*id$       SHIFT
+        $id       +id*id$       REDUCE by E->id
+        $E        +id*id$       SHIFT
+        $E+        id*id$       SHIFT
+        $E+id        *id$       REDUCE by E->id
+        $E+E         *id$       REDUCE by E->E+E
+        $E           *id$       SHIFT
+        $E*           id$       SHIFT
+        $E*id           $       REDUCE by E->id
+        $E*E            $       REDUCE by E->E*E
         $E              $       Accept
 

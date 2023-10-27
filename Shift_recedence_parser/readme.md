@@ -1,0 +1,27 @@
+## To run this script
+        gcc srp.c
+        ./a.out
+
+### Sample Input 
+        id+id*id
+### Sample Output
+        GRAMMAR is E->E+E 
+        E->E*E 
+        E->(E) 
+        E->id
+        enter input string 
+        id+id*id
+        stack    input   action
+
+        $       id+id*id$       SHIFT->id
+        $id       +id*id$       REDUCE TO E
+        $E        +id*id$       SHIFT->id
+        $E+        id*id$       SHIFT->id
+        $E+id        *id$       REDUCE TO E
+        $E+E         *id$       REDUCE TO E
+        $E           *id$       SHIFT->id
+        $E*           id$       SHIFT->id
+        $E*id           $       REDUCE TO E
+        $E*E            $       REDUCE TO E
+        $E              $       Accept
+

@@ -1,0 +1,7 @@
+s7cii@lab6:~/Compiler_Lab/Lexical_Analyzer/vowel_checker$ lex vc.l 
+s7cii@lab6:~/Compiler_Lab/Lexical_Analyzer/vowel_checker$ gcc lex.yy.c 
+s7cii@lab6:~/Compiler_Lab/Lexical_Analyzer/vowel_checker$ ./a.out 
+  
+
+Number of Vowels in the file = 4
+Number of consonants in the file= 9

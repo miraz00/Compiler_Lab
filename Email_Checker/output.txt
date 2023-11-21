@@ -1,0 +1,6 @@
+s7c131@cscl6d03:~/Documents/Compiler Lab$ lex email.l
+s7c131@cscl6d03:~/Documents/Compiler Lab$ gcc lex.yy.c
+s7c131@cscl6d03:~/Documents/Compiler Lab$ ./a.out
+
+ email Accepted
+s7c131@cscl6d03:~/Documents/Compiler Lab$ 

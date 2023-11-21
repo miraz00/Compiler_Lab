@@ -4,10 +4,7 @@
 
 
 %%
-
-[a - z.0 - 9 _] + @[a - z] + ".com" | ".in"
-flag = 1; 
-
+[a-z . 0-9]+@[a-z]+".com"|".in" { flag=1; }
 %%
 
 int main(int argc, char **argv) {
@@ -20,9 +17,9 @@ int main(int argc, char **argv) {
     yyin = file;
     yylex();
     if (flag == 1) 
-        printf("Accepted"); 
+        printf("\n email Accepted"); 
     else
-        printf("Not Accepted"); 
+        printf("\n email Not Accepted"); 
     printf("\n");
     return (0);
 }

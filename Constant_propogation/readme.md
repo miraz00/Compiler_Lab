@@ -1,15 +1,22 @@
-./a.out                                                       TSTP ✘  21s    
+## Constant Propogation
 
 
-Enter the maximum number of expressions: 4
+                                                  
+### How to Run? 
+    prompt> gcc cp.c
+    prompt> ./a.out
 
-Enter the input:
- = 3 - a
-+ a b t1
-+ a c t2
-+ t1 t2 t3
+#### Sample Input
+    Enter the maximum number of expressions: 4
 
-Optimized code is:
-+ 3 b t1
-+ 3 c t2
-+ t1 t2 t3
+    Enter the input:
+    = 3 - a
+    + a b t1
+    + a c t2
+    + t1 t2 t3
+
+#### Sample Output
+    Optimized code is:
+    + 3 b t1
+    + 3 c t2
+    + t1 t2 t3

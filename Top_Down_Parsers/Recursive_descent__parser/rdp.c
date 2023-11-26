@@ -1,3 +1,10 @@
+/* 
+Grammar Followed in this program is: 
+E -> E + T | T
+T -> T * F | F
+F -> ( E ) | num 
+*/
+
 #include <stdio.h>
 #include <ctype.h>
 #include<stdlib.h>

@@ -39,6 +39,10 @@ int parseExpression() {
     while (input[pos] == '+' || input[pos] == '-') {
         char op = input[pos];
         pos++;
+        if (input[pos] == '*' || input[pos] == '/' || input[pos] == '+' || input[pos] == '-') {
+            printf("Error: Invalid operations.\n");
+            exit(1);
+        }
         int right = parseTerm();
         if (op == '+') {
             left += right;
@@ -50,12 +54,17 @@ int parseExpression() {
     return left;
 }
 
+
 int parseTerm() {
     int left = parseFactor();
 
     while (input[pos] == '*' || input[pos] == '/') {
         char op = input[pos];
         pos++;
+        if (input[pos] == '*' || input[pos] == '/' || input[pos] == '+' || input[pos] == '-') {
+            printf("Error: Invalid operations.\n");
+            exit(1);
+        }
         int right = parseFactor();
         if (op == '*') {
             left *= right;
@@ -71,6 +80,7 @@ int parseTerm() {
 
     return left;
 }
+
 
 int parseFactor() {
     while (isspace(input[pos])) {

@@ -6,7 +6,7 @@ int nop, m = 0;
 char prod[10][10], res[10];
 
 void FIRST(char c);
-void FIRST2(char c);
+void FIRSTofFollow(char c);
 
 void FOLLOW(char c);
 void result(char c);
@@ -88,7 +88,7 @@ void FOLLOW(char c)
             if (prod[i][j] == c)
             {
                 if (prod[i][j + 1] != '\0')
-                    FIRST2(prod[i][j + 1]);
+                    FIRSTofFollow(prod[i][j + 1]);
                 if (prod[i][j + 1] == '\0' && c != prod[i][0])
                     FOLLOW(prod[i][0]);
             }
@@ -117,7 +117,7 @@ void FIRST(char c)
     return;
 }
 
-void FIRST2(char c)
+void FIRSTofFollow(char c)
 {
     int k;
     if (!(isupper(c)))

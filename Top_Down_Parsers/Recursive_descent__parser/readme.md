@@ -14,6 +14,12 @@
 #### Sample Output 2
     Parsing successful. Result: 17
 
+#### Sample Input 3
+    Enter an arithmetic expression: 5/*6
+
+#### Sample Output 3
+    Error: Invalid operator.
+
 
 ### What is Recursive Descent Parser?
 A recursive descent parser is a top-down parsing technique used in computer science and programming language processing to analyze and process the structure of a sequence of symbols, typically used in the context of programming languages and context-free grammars. It's called "recursive descent" because it recursively descends through the input, breaking it down into smaller components according to the grammar rules.

@@ -1,6 +1,101 @@
 # Compiler_Lab
 Repo for Compiler Lab Semester 7 KTU
 
+## The Map
+
+    ├── Bottom_Up_Parsers
+    │   ├── Operator Precedence
+    │   │   ├── oppre2.c
+    │   │   ├── output.txt
+    │   │   ├── readme.md
+    │   │   └── spam
+    │   │       └── op_pre_par.c
+    │   └── Shift_reduce_parser
+    │       ├── output.txt
+    │       ├── readme.md
+    │       └── srp.c
+    ├── Compiler Lab_Syllabus.pdf
+    ├── Constant_propogation
+    │   ├── a.out
+    │   ├── cp.c
+    │   ├── optimized.c
+    │   └── readme.md
+    ├── First_Follow
+    │   ├── Data_structured.c
+    │   ├── first_follow.c
+    │   ├── output.txt
+    │   └── readme.md
+    ├── Intermediate_code_generator
+    │   ├── a.out
+    │   ├── icg.c
+    │   ├── input.txt
+    │   ├── output.txt
+    │   └── readme.md
+    ├── Lex
+    │   ├── Email_Checker
+    │   │   ├── file.txt
+    │   │   ├── lex_checkmail.l
+    │   │   ├── lex.yy.c
+    │   │   └── output.txt
+    │   ├── Lexical_Analyzer
+    │   │   ├── Readme.md
+    │   │   ├── Using C Program
+    │   │   │   ├── filein.txt
+    │   │   │   ├── fileout.txt
+    │   │   │   ├── lex_analyzer.c
+    │   │   │   └── readme.md
+    │   │   └── Using Lex
+    │   │       ├── file.c
+    │   │       ├── lex_ar.l
+    │   │       ├── lex.yy.c
+    │   │       ├── output.txt
+    │   │       ├── Readme.md
+    │   │       └── Table_format_ouput
+    │   │           ├── file.c
+    │   │           ├── lex_tab.l
+    │   │           ├── lex.yy.c
+    │   │           └── output.txt
+    │   └── vowel_counter
+    │       ├── file.txt
+    │       ├── lex.yy.c
+    │       ├── output.txt
+    │       └── vc.l
+    ├── LICENSE
+    ├── NFA to DFA
+    │   ├── input.txt
+    │   ├── nfadfa
+    │   ├── nfadfa.c
+    │   ├── nfatodfa2
+    │   │   ├── output.txt
+    │   │   ├── program
+    │   │   └── program.c
+    │   ├── nfatodfa3.c
+    │   ├── nfatodfacorrect.c
+    │   ├── output.txt
+    │   └── readme.md
+    ├── README.md
+    ├── Top_Down_Parsers
+    │   └── Recursive_descent__parser
+    │       ├── rdp.c
+    │       └── readme.md
+    └── YACC
+        ├── Calculator
+        │   ├── file.l
+        │   ├── file.y
+        │   ├── lex.yy.c
+        │   ├── readme.md
+        │   ├── y.tab.c
+        │   └── y.tab.h
+        ├── readme.md
+        ├── valid_expressions
+        │   ├── file.l
+        │   └── file.y
+        └── valid_identifier
+            ├── file.l
+            └── file.y
+
+    23 directories, 68 files
+
 
 ### SYLLABUS
     1. Implementation of lexical analyzer using the tool LEX.
